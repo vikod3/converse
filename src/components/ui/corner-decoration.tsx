@@ -7,13 +7,13 @@ export const CornerDecoration = ({ position, className = "" }: CornerDecorationP
   const getPositionClasses = () => {
     switch (position) {
       case "top-left":
-        return "top-0 left-0 rotate-180 origin-top-left";
+        return "top-0 left-0";
       case "top-right":
-        return "top-0 right-0 -rotate-90 origin-top-right";
+        return "top-0 right-0 rotate-90";
       case "bottom-left":
-        return "bottom-0 left-0 rotate-90 origin-bottom-left";
+        return "bottom-0 left-0 -rotate-90";
       case "bottom-right":
-        return "bottom-0 right-0 origin-bottom-right";
+        return "bottom-0 right-0 rotate-180";
       default:
         return "";
     }
@@ -21,7 +21,11 @@ export const CornerDecoration = ({ position, className = "" }: CornerDecorationP
 
   return (
     <div 
-      className={`absolute w-[8.5px] h-[7px] outline outline-1 outline-white outline-offset-[-0.5px] z-50 ${getPositionClasses()} ${className}`}
+      className={`absolute w-2 h-2 z-50 ${getPositionClasses()} ${className}`}
+      style={{
+        borderTop: '1px solid white',
+        borderLeft: '1px solid white',
+      }}
     />
   );
 };
