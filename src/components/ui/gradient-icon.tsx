@@ -28,11 +28,8 @@ export const GradientIcon = ({ children, className, size = "md" }: GradientIconP
       {/* Glow effect */}
       <div className="absolute inset-2 bg-white/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
-      {/* Corner decorations */}
+      {/* Top-left corner decoration only */}
       <CornerDecoration position="top-left" />
-      <CornerDecoration position="top-right" />
-      <CornerDecoration position="bottom-left" />
-      <CornerDecoration position="bottom-right" />
       
       {/* Content */}
       <div className="relative z-10">{children}</div>
