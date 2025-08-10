@@ -12,7 +12,7 @@ export const GradientButton = ({ children, className, onClick }: GradientButtonP
     <button
       onClick={onClick}
       className={cn(
-        "relative px-4 py-2.5 bg-gradient-to-b from-white/3 to-white/6 border border-white/10",
+        "relative px-4 py-2.5 bg-gradient-to-b from-white/3 to-white/6 border border-white/20",
         "text-white text-sm font-semibold leading-tight",
         "hover:from-white/5 hover:to-white/8 transition-all duration-200",
         "overflow-hidden group",
