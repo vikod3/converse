@@ -1,10 +1,10 @@
 export const InfiniteMarquee = () => {
   const images = [
-    "/lovable-uploads/fa054ed1-29ae-4901-94f6-2846811c97ed.png",
+    "/lovable-uploads/ae554229-e9a5-4765-8e15-5a087a04c963.png",
     "/lovable-uploads/fddfb4e9-2cb5-4d5e-99f7-85a1c4b7f7d8.png",
     "/lovable-uploads/4a840b83-b610-41bf-a085-84831cf2c7a8.png",
     "/lovable-uploads/ed01244a-f9d0-4b45-afea-899bbf9c52c1.png",
-    "/lovable-uploads/81d5c242-8d62-4618-8b10-6b370008b938.png",
+    "/lovable-uploads/29161186-c99a-43e9-8b66-aca73a0b7efc.png",
   ];
 
   return (
