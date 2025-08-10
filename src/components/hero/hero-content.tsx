@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ArrowUpRight } from "lucide-react";
 
 export const HeroContent = () => {
   return (
@@ -13,6 +14,7 @@ export const HeroContent = () => {
       </div>
       <Button variant="default" className="mt-2 rounded-full">
         Get Started
+        <ArrowUpRight size={16} />
       </Button>
     </div>
   );

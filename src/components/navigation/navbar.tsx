@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/ui/logo";
 import { NavLink } from "@/components/ui/nav-link";
 import { MobileMenu } from "./mobile-menu";
+import { ArrowUpRight } from "lucide-react";
 
 const navigationItems = [
   { label: "About", href: "#about" },
@@ -31,6 +32,7 @@ export const Navbar = () => {
         <div className="hidden md:block">
           <Button className="rounded-full px-4 py-2">
             Get Started
+            <ArrowUpRight size={16} />
           </Button>
         </div>
 
