@@ -11,7 +11,7 @@ export const GradientIcon = ({ children, className, size = "md" }: GradientIconP
   const sizeClasses = {
     sm: "w-8 h-8 p-1.5",
     md: "w-12 h-12 p-3",
-    lg: "w-16 h-16 p-4"
+    lg: "w-16 h-16 p-2.5"
   };
 
   return (
