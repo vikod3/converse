@@ -59,12 +59,12 @@ export const FeatureCard = ({
 
         {/* Right side - Image if provided */}
         {image && (
-          <div className="flex-shrink-0 md:w-64 lg:w-80">
-            <div className="rounded-lg overflow-hidden h-full">
+          <div className="flex-shrink-0 md:w-48 lg:w-56">
+            <div className="rounded-lg overflow-hidden h-48 md:h-full">
               <img 
                 src={image} 
                 alt={title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
