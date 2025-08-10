@@ -1,3 +1,5 @@
+import { ChatInput } from "./chat-input";
+
 export const InfiniteMarquee = () => {
   const images = [
     "/lovable-uploads/ae554229-e9a5-4765-8e15-5a087a04c963.png",
@@ -10,6 +12,11 @@ export const InfiniteMarquee = () => {
   return (
     <div className="w-full flex flex-col items-center gap-4 px-4">
       <div className="relative w-full max-w-7xl overflow-hidden">
+        {/* Chat input overlay */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-2xl px-4">
+          <ChatInput />
+        </div>
+        
         {/* Top gradient fade */}
         <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none"></div>
         
