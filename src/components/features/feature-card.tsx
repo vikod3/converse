@@ -33,9 +33,9 @@ export const FeatureCard = ({
       className
     )}>
       <FadeIn delay={delay} duration={0.6}>
-        <div className="flex flex-col md:flex-row h-full gap-6">
+        <div className="flex flex-col md:flex-row h-full gap-6 items-center">
           {/* Left side - Content */}
-          <div className="flex flex-col justify-center flex-1 gap-6">
+          <div className="flex flex-col justify-center items-center text-center md:text-left md:items-start flex-1 gap-6">
             {/* Icon */}
             <div>
               <GradientIcon size="lg">
