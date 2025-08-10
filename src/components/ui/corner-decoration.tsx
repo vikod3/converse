@@ -7,23 +7,21 @@ export const CornerDecoration = ({ position, className = "" }: CornerDecorationP
   const getPositionClasses = () => {
     switch (position) {
       case "top-left":
-        return "top-2 left-2";
+        return "top-0 left-0 rotate-180 origin-top-left";
       case "top-right":
-        return "top-2 right-2 rotate-90";
+        return "top-0 right-0 -rotate-90 origin-top-right";
       case "bottom-left":
-        return "bottom-2 left-2 -rotate-90";
+        return "bottom-0 left-0 rotate-90 origin-bottom-left";
       case "bottom-right":
-        return "bottom-2 right-2 rotate-180";
+        return "bottom-0 right-0 origin-bottom-right";
       default:
         return "";
     }
   };
 
   return (
-    <div className={`absolute ${getPositionClasses()} ${className}`}>
-      <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.5 0.5H8M0.5 0.5V6" stroke="white" strokeOpacity="0.3" />
-      </svg>
-    </div>
+    <div 
+      className={`absolute w-[8.5px] h-[7px] outline outline-1 outline-white outline-offset-[-0.5px] ${getPositionClasses()} ${className}`}
+    />
   );
 };
