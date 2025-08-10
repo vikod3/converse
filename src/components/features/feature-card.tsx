@@ -33,47 +33,47 @@ export const FeatureCard = ({
         span2 && "lg:col-span-2",
         className
       )}>
-      <div className="flex flex-col md:flex-row h-full gap-6">
-        {/* Left side - Content */}
-        <div className="flex flex-col justify-center flex-1 gap-6">
-          {/* Icon */}
-          <div>
-            <GradientIcon size="lg">
-              {icon}
-            </GradientIcon>
-          </div>
+        <div className="flex flex-col md:flex-row h-full gap-6">
+          {/* Left side - Content */}
+          <div className="flex flex-col justify-center flex-1 gap-6">
+            {/* Icon */}
+            <div>
+              <GradientIcon size="lg">
+                {icon}
+              </GradientIcon>
+            </div>
 
-          {/* Content */}
-          <div className="space-y-4">
-            <h3 className="text-xl lg:text-2xl font-semibold text-white leading-tight">
-              {title}
-            </h3>
-            <p className="text-sm text-white/70 leading-relaxed">
-              {description}
-            </p>
-          </div>
+            {/* Content */}
+            <div className="space-y-4">
+              <h3 className="text-xl lg:text-2xl font-semibold text-white leading-tight">
+                {title}
+              </h3>
+              <p className="text-sm text-white/70 leading-relaxed">
+                {description}
+              </p>
+            </div>
 
-          {/* Button */}
-          <div>
-            <GradientButton>
-              {buttonText}
-            </GradientButton>
-          </div>
-        </div>
-
-        {/* Right side - Image if provided */}
-        {image && (
-          <div className="flex-shrink-0 md:w-48 lg:w-56">
-            <div className="rounded-lg overflow-hidden h-48 md:h-full">
-              <img 
-                src={image} 
-                alt={title}
-                className="w-full h-full object-contain"
-              />
+            {/* Button */}
+            <div>
+              <GradientButton>
+                {buttonText}
+              </GradientButton>
             </div>
           </div>
-        )}
-      </div>
+
+          {/* Right side - Image if provided */}
+          {image && (
+            <div className="flex-shrink-0 md:w-48 lg:w-56">
+              <div className="rounded-lg overflow-hidden h-48 md:h-full">
+                <img 
+                  src={image} 
+                  alt={title}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+          )}
+        </div>
       </Card>
     </FadeIn>
   );
