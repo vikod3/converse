@@ -13,7 +13,7 @@ export const ChatInput = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto p-3 bg-black/6 rounded-3xl backdrop-blur-[50px] flex flex-col gap-3">
+    <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto p-3 bg-black/6 border border-white/20 rounded-3xl backdrop-blur-[50px] flex flex-col gap-3">
       {/* Input field */}
       <input
         type="text"
