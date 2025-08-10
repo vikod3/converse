@@ -3,7 +3,7 @@ import { FeatureCard } from "./feature-card";
 import { Bot, MessageSquare, Zap } from "lucide-react";
 export const FeaturesSection = () => {
   return <section className="relative min-h-screen bg-background py-16">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 lg:items-end mb-16">
           {/* Left side - Main content */}
