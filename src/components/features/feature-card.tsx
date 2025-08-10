@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { GradientIcon } from "@/components/ui/gradient-icon";
+import { FadeIn } from "@/components/ui/fade-in";
 import { cn } from "@/lib/utils";
 
 interface FeatureCardProps {
@@ -11,6 +12,7 @@ interface FeatureCardProps {
   image?: string;
   className?: string;
   span2?: boolean;
+  delay?: number;
 }
 
 export const FeatureCard = ({ 
@@ -20,15 +22,17 @@ export const FeatureCard = ({
   icon, 
   image, 
   className,
-  span2 = false 
+  span2 = false,
+  delay = 0
 }: FeatureCardProps) => {
   return (
-    <Card className={cn(
-      "relative p-6 bg-white/[0.04] border-white/20 backdrop-blur-sm rounded-3xl",
-      "hover:bg-white/[0.06] transition-all duration-300",
-      span2 && "lg:col-span-2",
-      className
-    )}>
+    <FadeIn delay={delay} duration={0.6}>
+      <Card className={cn(
+        "relative p-6 bg-white/[0.04] border-white/20 backdrop-blur-sm rounded-3xl",
+        "hover:bg-white/[0.06] transition-all duration-300",
+        span2 && "lg:col-span-2",
+        className
+      )}>
       <div className="flex flex-col md:flex-row h-full gap-6">
         {/* Left side - Content */}
         <div className="flex flex-col justify-center flex-1 gap-6">
@@ -70,6 +74,7 @@ export const FeatureCard = ({
           </div>
         )}
       </div>
-    </Card>
+      </Card>
+    </FadeIn>
   );
 };

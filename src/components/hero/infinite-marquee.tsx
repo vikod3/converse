@@ -1,4 +1,5 @@
 import { ChatInput } from "./chat-input";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export const InfiniteMarquee = () => {
   const images = [
@@ -10,46 +11,48 @@ export const InfiniteMarquee = () => {
   ];
 
   return (
-    <div className="w-full max-w-7xl flex flex-col items-center gap-4">
-      <div className="relative w-full max-w-7xl overflow-hidden">
-        {/* Chat input overlay */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-2xl px-4">
-          <ChatInput />
-        </div>
-        
-        {/* Top gradient fade */}
-        <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none"></div>
-        
-        {/* Bottom gradient fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
-        
-        <div className="flex animate-marquee gap-3">
-          {/* First set of images */}
-          {images.map((src, index) => (
-            <div key={`first-${index}`} className="flex-shrink-0 w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-[367px] xl:h-[383px] rounded-lg overflow-hidden">
-              <img
-                src={src}
-                alt={`Marquee image ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ))}
+    <FadeIn delay={0.5} duration={0.8}>
+      <div className="w-full max-w-7xl flex flex-col items-center gap-4">
+        <div className="relative w-full max-w-7xl overflow-hidden">
+          {/* Chat input overlay */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-2xl px-4">
+            <ChatInput />
+          </div>
           
-          {/* Duplicate set for seamless loop */}
-          {images.map((src, index) => (
-            <div key={`second-${index}`} className="flex-shrink-0 w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-[367px] xl:h-[383px] rounded-lg overflow-hidden">
-              <img
-                src={src}
-                alt={`Marquee image ${index + 1} duplicate`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ))}
+          {/* Top gradient fade */}
+          <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none"></div>
+          
+          {/* Bottom gradient fade */}
+          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
+          
+          <div className="flex animate-marquee gap-3">
+            {/* First set of images */}
+            {images.map((src, index) => (
+              <div key={`first-${index}`} className="flex-shrink-0 w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-[367px] xl:h-[383px] rounded-lg overflow-hidden">
+                <img
+                  src={src}
+                  alt={`Marquee image ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+            
+            {/* Duplicate set for seamless loop */}
+            {images.map((src, index) => (
+              <div key={`second-${index}`} className="flex-shrink-0 w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-[367px] xl:h-[383px] rounded-lg overflow-hidden">
+                <img
+                  src={src}
+                  alt={`Marquee image ${index + 1} duplicate`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </div>
+        <p className="text-sm text-muted-foreground text-center leading-relaxed">
+          [ Perfect for SaaS platforms, AI tools, and virtual assistants ]
+        </p>
       </div>
-      <p className="text-sm text-muted-foreground text-center leading-relaxed">
-        [ Perfect for SaaS platforms, AI tools, and virtual assistants ]
-      </p>
-    </div>
+    </FadeIn>
   );
 };

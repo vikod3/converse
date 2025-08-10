@@ -41,9 +41,9 @@ export const FeaturesSection = () => {
 
         {/* Bento Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-          <FeatureCard span2={true} title="Seamless AI Management. Anywhere, Anytime." description="Get full control over your AI agents with our powerful cloud dashboard. Monitor performance, deploy updates, and refine workflows, all in real-time, from any browser." buttonText="Get started Now" icon={<Bot size={24} />} image="/lovable-uploads/4fae5db9-e447-477d-ab07-7ae58f7bbdb9.png" />
+          <FeatureCard delay={0.6} span2={true} title="Seamless AI Management. Anywhere, Anytime." description="Get full control over your AI agents with our powerful cloud dashboard. Monitor performance, deploy updates, and refine workflows, all in real-time, from any browser." buttonText="Get started Now" icon={<Bot size={24} />} image="/lovable-uploads/4fae5db9-e447-477d-ab07-7ae58f7bbdb9.png" />
           
-          <FeatureCard title="Tailor-Made Conversations. Just for You." description="Craft unique responses and behaviors for your chatbot using our flexible logic editor. Match your brand's tone, style, and intelligence to create the perfect conversational experience." buttonText="Go to Features" icon={<MessageSquare size={24} />} />
+          <FeatureCard delay={0.8} title="Tailor-Made Conversations. Just for You." description="Craft unique responses and behaviors for your chatbot using our flexible logic editor. Match your brand's tone, style, and intelligence to create the perfect conversational experience." buttonText="Go to Features" icon={<MessageSquare size={24} />} />
         </div>
       </div>
     </section>;
