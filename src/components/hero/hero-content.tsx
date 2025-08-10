@@ -11,7 +11,7 @@ export const HeroContent = () => {
           Maesttro is a modern AI chatbot UI kit crafted to deliver intuitive, seamless, and futuristic chatbot experiences.
         </p>
       </div>
-      <Button variant="default" className="mt-2">
+      <Button variant="default" className="mt-2 rounded-full">
         Get Started
       </Button>
     </div>
