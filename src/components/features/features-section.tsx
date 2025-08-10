@@ -8,9 +8,16 @@ export const FeaturesSection = () => {
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 lg:items-end mb-16">
           {/* Left side - Main content */}
           <div className="flex flex-col gap-6">
-            <Badge variant="outline" className="w-fit px-4 py-2 text-sm border-white/20 text-white/70 bg-transparent">
-              OUR FEATURES
-            </Badge>
+            <div className="relative w-fit px-4 py-2 bg-gradient-to-b from-white/3 to-white/6 border border-white/20 text-sm text-white/70 bg-transparent overflow-hidden group">
+              {/* Corner decorations */}
+              <div className="absolute top-0 left-0 w-2 h-2 z-50" style={{ borderTop: '1px solid white', borderLeft: '1px solid white' }} />
+              <div className="absolute top-0 right-0 w-2 h-2 z-50 rotate-90" style={{ borderTop: '1px solid white', borderLeft: '1px solid white' }} />
+              <div className="absolute bottom-0 left-0 w-2 h-2 z-50 -rotate-90" style={{ borderTop: '1px solid white', borderLeft: '1px solid white' }} />
+              <div className="absolute bottom-0 right-0 w-2 h-2 z-50 rotate-180" style={{ borderTop: '1px solid white', borderLeft: '1px solid white' }} />
+              
+              {/* Content */}
+              <span className="relative z-10">OUR FEATURES</span>
+            </div>
             
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-foreground">
               Everything You Need to Build an AI Chat App
