@@ -13,7 +13,7 @@ export const InfiniteMarquee = () => {
         <div className="flex animate-marquee gap-3">
           {/* First set of images */}
           {images.map((src, index) => (
-            <div key={`first-${index}`} className="flex-shrink-0 w-80 h-48 rounded-lg overflow-hidden">
+            <div key={`first-${index}`} className="flex-shrink-0 w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-[367px] xl:h-[383px] rounded-lg overflow-hidden">
               <img
                 src={src}
                 alt={`Marquee image ${index + 1}`}
@@ -24,7 +24,7 @@ export const InfiniteMarquee = () => {
           
           {/* Duplicate set for seamless loop */}
           {images.map((src, index) => (
-            <div key={`second-${index}`} className="flex-shrink-0 w-80 h-48 rounded-lg overflow-hidden">
+            <div key={`second-${index}`} className="flex-shrink-0 w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-[367px] xl:h-[383px] rounded-lg overflow-hidden">
               <img
                 src={src}
                 alt={`Marquee image ${index + 1} duplicate`}
