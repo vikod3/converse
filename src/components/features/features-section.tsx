@@ -19,7 +19,7 @@ export const FeaturesSection = () => {
               <span className="relative z-10 bg-gradient-to-r from-purple-500 to-white bg-clip-text text-transparent">OUR FEATURES</span>
             </div>
             
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-foreground">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-foreground max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl">
               Everything You Need to Build an AI Chat App
             </h2>
           </div>
