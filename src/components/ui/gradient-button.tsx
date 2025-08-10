@@ -22,8 +22,11 @@ export const GradientButton = ({ children, className, onClick }: GradientButtonP
       {/* Glow effect */}
       <div className="absolute inset-x-4 bottom-0 h-2 bg-white/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
-      {/* Top-left corner decoration only */}
+      {/* Corner decorations on all four corners */}
       <CornerDecoration position="top-left" />
+      <CornerDecoration position="top-right" />
+      <CornerDecoration position="bottom-left" />
+      <CornerDecoration position="bottom-right" />
       
       {/* Content */}
       <span className="relative z-10">{children}</span>
