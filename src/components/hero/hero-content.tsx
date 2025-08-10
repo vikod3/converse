@@ -11,9 +11,12 @@ export const HeroContent = () => {
           as="h1"
           className="text-4xl sm:text-5xl lg:text-7xl font-semibold leading-tight text-foreground"
         />
-        <p className="text-sm sm:text-base max-w-sm lg:max-w-md text-muted-foreground leading-relaxed">
-          Maesttro is a modern AI chatbot UI kit crafted to deliver intuitive, seamless, and futuristic chatbot experiences.
-        </p>
+        <AnimatedText 
+          text="Maesttro is a modern AI chatbot UI kit crafted to deliver intuitive, seamless, and futuristic chatbot experiences."
+          as="p"
+          className="text-sm sm:text-base max-w-sm lg:max-w-md text-muted-foreground leading-relaxed"
+          delay={0.3}
+        />
       </div>
       <Button variant="default" className="mt-2 rounded-full">
         Get Started

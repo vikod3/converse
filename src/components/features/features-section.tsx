@@ -30,9 +30,12 @@ export const FeaturesSection = () => {
           
           {/* Right side - Description aligned at bottom */}
           <div className="lg:flex lg:items-end lg:justify-end">
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-xs sm:max-w-sm lg:text-right">
-              Maestro is a modern AI chatbot UI kit crafted to deliver intuitive, seamless, and futuristic chatbot experiences.
-            </p>
+            <AnimatedText 
+              text="Maestro is a modern AI chatbot UI kit crafted to deliver intuitive, seamless, and futuristic chatbot experiences."
+              as="p"
+              className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-xs sm:max-w-sm lg:text-right"
+              delay={0.4}
+            />
           </div>
         </div>
 
