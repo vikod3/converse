@@ -29,41 +29,46 @@ export const FeatureCard = ({
       span2 && "lg:col-span-2",
       className
     )}>
-      <div className="flex flex-col h-full">
-        {/* Icon */}
-        <div className="mb-6">
-          <GradientIcon size="lg">
-            {icon}
-          </GradientIcon>
+      <div className="flex flex-col md:flex-row h-full gap-6">
+        {/* Left side - Content */}
+        <div className="flex flex-col flex-1">
+          {/* Icon */}
+          <div className="mb-6">
+            <GradientIcon size="lg">
+              {icon}
+            </GradientIcon>
+          </div>
+
+          {/* Content */}
+          <div className="flex-1 space-y-4">
+            <h3 className="text-xl lg:text-2xl font-semibold text-white leading-tight">
+              {title}
+            </h3>
+            <p className="text-sm text-white/70 leading-relaxed">
+              {description}
+            </p>
+          </div>
+
+          {/* Button */}
+          <div className="mt-6">
+            <GradientButton>
+              {buttonText}
+            </GradientButton>
+          </div>
         </div>
 
-        {/* Content */}
-        <div className="flex-1 space-y-4">
-          <h3 className="text-xl lg:text-2xl font-semibold text-white leading-tight">
-            {title}
-          </h3>
-          <p className="text-sm text-white/70 leading-relaxed">
-            {description}
-          </p>
-        </div>
-
-        {/* Image if provided */}
+        {/* Right side - Image if provided */}
         {image && (
-          <div className="my-6 rounded-lg overflow-hidden">
-            <img 
-              src={image} 
-              alt={title}
-              className="w-full h-auto object-cover"
-            />
+          <div className="flex-shrink-0 md:w-64 lg:w-80">
+            <div className="rounded-lg overflow-hidden h-full">
+              <img 
+                src={image} 
+                alt={title}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         )}
-
-        {/* Button */}
-        <div className="mt-6">
-          <GradientButton>
-            {buttonText}
-          </GradientButton>
-        </div>
       </div>
     </Card>
   );
