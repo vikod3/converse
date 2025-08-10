@@ -44,21 +44,6 @@ export const FeaturesSection = () => {
             buttonText="Go to Features"
             icon={<MessageSquare size={24} />}
           />
-          
-          <FeatureCard
-            title="Lightning Fast Performance"
-            description="Experience blazing fast response times with our optimized AI infrastructure. Your users will enjoy seamless conversations without any delays."
-            buttonText="Learn More"
-            icon={<Zap size={24} />}
-          />
-          
-          <FeatureCard
-            title="Advanced Analytics"
-            description="Track conversation metrics, user engagement, and AI performance with comprehensive analytics dashboard."
-            buttonText="View Analytics"
-            icon={<Bot size={24} />}
-            span2={true}
-          />
         </div>
       </div>
     </section>
