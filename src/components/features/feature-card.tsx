@@ -24,7 +24,7 @@ export const FeatureCard = ({
 }: FeatureCardProps) => {
   return (
     <Card className={cn(
-      "relative p-6 bg-white/[0.04] border-white/20 backdrop-blur-sm",
+      "relative p-6 bg-white/[0.04] border-white/20 backdrop-blur-sm rounded-3xl",
       "hover:bg-white/[0.06] transition-all duration-300",
       span2 && "lg:col-span-2",
       className
