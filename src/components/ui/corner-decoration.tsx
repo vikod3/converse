@@ -21,7 +21,7 @@ export const CornerDecoration = ({ position, className = "" }: CornerDecorationP
 
   return (
     <div 
-      className={`absolute w-[8.5px] h-[7px] outline outline-1 outline-white outline-offset-[-0.5px] ${getPositionClasses()} ${className}`}
+      className={`absolute w-[8.5px] h-[7px] outline outline-1 outline-white outline-offset-[-0.5px] z-50 ${getPositionClasses()} ${className}`}
     />
   );
 };
