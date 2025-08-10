@@ -11,13 +11,13 @@ export const GradientIcon = ({ children, className, size = "md" }: GradientIconP
   const sizeClasses = {
     sm: "w-8 h-8 p-1.5",
     md: "w-12 h-12 p-3",
-    lg: "w-16 h-16 p-2"
+    lg: "w-16 h-16 p-1.5"
   };
 
   return (
     <div
       className={cn(
-        "relative bg-gradient-to-b from-white/3 to-white/6 border border-white/20",
+        "relative bg-gradient-to-b from-white/10 to-white/[0.02] border border-white/20",
         "flex items-center justify-center text-white",
         "hover:from-white/5 hover:to-white/8 transition-all duration-200",
         "overflow-hidden group",
