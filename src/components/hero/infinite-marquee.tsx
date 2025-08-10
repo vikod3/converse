@@ -11,10 +11,10 @@ export const InfiniteMarquee = () => {
     <div className="w-full flex flex-col items-center gap-4 px-4">
       <div className="relative w-full max-w-7xl overflow-hidden">
         {/* Top gradient fade */}
-        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none"></div>
         
         {/* Bottom gradient fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
         
         <div className="flex animate-marquee gap-3">
           {/* First set of images */}
