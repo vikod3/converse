@@ -32,7 +32,7 @@ export const FeatureCard = ({
       span2 && "lg:col-span-2",
       className
     )}>
-      <FadeIn delay={delay} duration={0.6}>
+      <FadeIn delay={delay} duration={0.6} className="h-full">
         <div className="flex flex-col md:flex-row h-full gap-6 items-center justify-center">
           {/* Left side - Content */}
           <div className="flex flex-col justify-center items-center text-center md:text-left md:items-start flex-1 gap-6">
