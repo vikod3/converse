@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { FeatureCard } from "./feature-card";
 import { Bot, MessageSquare, Zap } from "lucide-react";
+import { AnimatedText } from "@/components/ui/animated-text";
 export const FeaturesSection = () => {
   return <section className="relative min-h-screen bg-background py-16">
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
@@ -19,9 +20,12 @@ export const FeaturesSection = () => {
               <span className="relative z-10 bg-gradient-to-r from-purple-500 to-white bg-clip-text text-transparent">OUR FEATURES</span>
             </div>
             
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-foreground max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl">
-              Everything You Need to Build an AI Chat App
-            </h2>
+            <AnimatedText 
+              text="Everything You Need to Build an AI Chat App"
+              as="h2"
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-foreground max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl"
+              delay={0.2}
+            />
           </div>
           
           {/* Right side - Description aligned at bottom */}
