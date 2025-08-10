@@ -31,16 +31,16 @@ export const FeatureCard = ({
     )}>
       <div className="flex flex-col md:flex-row h-full gap-6">
         {/* Left side - Content */}
-        <div className="flex flex-col flex-1">
+        <div className="flex flex-col justify-center flex-1 gap-6">
           {/* Icon */}
-          <div className="mb-6">
+          <div>
             <GradientIcon size="lg">
               {icon}
             </GradientIcon>
           </div>
 
           {/* Content */}
-          <div className="flex-1 space-y-4">
+          <div className="space-y-4">
             <h3 className="text-xl lg:text-2xl font-semibold text-white leading-tight">
               {title}
             </h3>
@@ -50,7 +50,7 @@ export const FeatureCard = ({
           </div>
 
           {/* Button */}
-          <div className="mt-6">
+          <div>
             <GradientButton>
               {buttonText}
             </GradientButton>
