@@ -13,7 +13,7 @@ export const InfiniteMarquee = () => {
   return (
     <FadeIn delay={0.5} duration={0.8}>
       <div className="w-full max-w-7xl flex flex-col items-center gap-4">
-        <div className="relative w-full max-w-7xl overflow-hidden">
+        <div className="relative w-full max-w-7xl overflow-visible">
           {/* Chat input overlay */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-2xl px-4">
             <ChatInput />
