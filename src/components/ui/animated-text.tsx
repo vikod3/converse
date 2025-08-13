@@ -68,7 +68,7 @@ export const AnimatedText = ({
         <motion.span
           variants={child}
           key={index}
-          className="inline-block mr-1"
+          className="inline-block mr-0.5 last:mr-0"
         >
           {word}
         </motion.span>
