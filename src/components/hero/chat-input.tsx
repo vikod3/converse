@@ -19,7 +19,7 @@ export const ChatInput = () => {
         type="text"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        placeholder="Ask Anything Maestro"
+        placeholder="Ask Anything Nexus"
         className="bg-transparent text-white placeholder-muted-foreground text-sm font-normal outline-none border-none w-full"
       />
       

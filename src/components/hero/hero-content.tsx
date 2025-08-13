@@ -12,7 +12,7 @@ export const HeroContent = () => {
           className="text-4xl sm:text-5xl lg:text-7xl font-semibold leading-tight text-foreground"
         />
         <AnimatedText 
-          text="Maesttro is a sleek Al chatbot Ul kit for intuitive, seamless conversations — designed to launch polished chat"
+          text="Nexus is a sleek Al chatbot Ul kit for intuitive, seamless conversations — designed to launch polished chat"
           as="p"
           className="text-sm sm:text-base max-w-sm lg:max-w-md text-muted-foreground leading-relaxed"
           delay={0.3}

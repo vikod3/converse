@@ -9,7 +9,7 @@ export const Logo = ({ className }: LogoProps) => {
     <div className={cn("flex items-center gap-1.5", className)}>
       <img 
         src="/lovable-uploads/d5a8a1c6-12cf-4724-82c8-a0250070d999.png" 
-        alt="Maesttro Logo" 
+        alt="Nexus Logo" 
         className="h-8 w-auto"
       />
     </div>
