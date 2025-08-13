@@ -7,12 +7,12 @@ export const HeroContent = () => {
     <div className="flex flex-col items-center justify-center gap-6 px-4 text-center max-w-4xl mx-auto">
       <div className="flex flex-col items-center gap-4">
         <AnimatedText 
-          text="Empower Conversations with Smarter AI"
+          text="Elevate Conversations with Intelligent AI"
           as="h1"
           className="text-4xl sm:text-5xl lg:text-7xl font-semibold leading-tight text-foreground"
         />
         <AnimatedText 
-          text="Maesttro is a modern AI chatbot UI kit crafted to deliver intuitive, seamless, and futuristic chatbot experiences."
+          text="Maesttro offers a sleek AI chatbot UI kit built to enable intuitive, seamless, and next-gen conversational experiences."
           as="p"
           className="text-sm sm:text-base max-w-sm lg:max-w-md text-muted-foreground leading-relaxed"
           delay={0.3}

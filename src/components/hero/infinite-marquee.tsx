@@ -50,7 +50,7 @@ export const InfiniteMarquee = () => {
           </div>
         </div>
         <p className="text-sm text-muted-foreground text-center leading-relaxed">
-          [ Perfect for SaaS platforms, AI tools, and virtual assistants ]
+          [ Ideal for SaaS apps, AI tools, and virtual assistants ]
         </p>
       </div>
     </FadeIn>
